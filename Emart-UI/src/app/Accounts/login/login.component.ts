@@ -32,11 +32,15 @@ ngOnInit() {
   role:['']
     });
   }
+  get f() { return this.login.controls; }
 
 onSubmit(){
     this.submitted=true;
     }
-
+    onReset() {
+      this.submitted = false;
+      this.login.reset();
+  }
 public Validate()
 {
   let username=this.login.value['username'];
@@ -95,4 +99,6 @@ Navigate()
       alert("invalid credentials");
 }
 }
+
+
 }
