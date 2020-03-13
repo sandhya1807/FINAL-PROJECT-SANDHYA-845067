@@ -1,0 +1,23 @@
+    <div class="card m-3" style="background-image: repeating-linear-gradient(pink,white,grey); width: 110rem;">
+      <h5 class="card-header text-center ">View Items</h5>
+      <div class="table table-bordered">
+   
+               <tr>
+                   <th>Id</th>
+                   <th>Buyer Id</th>
+                   <th>Seller Id</th>
+                   <th>Transactiontype</th>
+                   <th>Item Id</th>
+                   <th>Remarks</th>
+               </tr>
+               <tr *ngFor="let purchasehistory of list">  
+                    <td>{{purchasehistory.id}}</td>
+                    <td>{{purchasehistory.Bid}}</td>
+                    <td>{{purchasehistory.sid}}</td>
+                    <td>{{purchasehistory.transactiontype}}</td>
+                    <td>{{purchasehistory.iid}}</td>
+                    <td>{{purchasehistory.remarks}}</td>
+               </tr>
+            </div>
+            </div>
+           

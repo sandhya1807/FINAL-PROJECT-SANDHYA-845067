@@ -14,7 +14,7 @@
         <a [routerLink]="['/buyer-landing-page/by-product']" routerLinkActive="router-link-active" ><span class="glyphicon glyphicon-shopping-cart"></span> BuyProduct</a>
         <a [routerLink]="['buyer-edit-profile']" routerLinkActive="router-link-active" ><i class="fa fa-fw fa-user"></i>BuyerEditProfile</a>
         <a [routerLink]="['search']" routerLinkActive="router-link-active"><span class="fa fa-search"></span>Search</a>
-        <a href="#" id="l" ><i class="fa fa-fw fa-user"></i>logout</a>
+        <input type="button" value="Logout"  (click)="Logout()"  style="float:right">
       </div>
 </body>
 </html>

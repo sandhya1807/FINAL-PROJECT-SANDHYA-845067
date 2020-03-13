@@ -79,6 +79,7 @@ public Validate()
 }
 if(username=="Admin" && password=="admin")
 {
+  localStorage.setItem("Admin",username);
   this.route.navigateByUrl("adminlandingpage");
  }
 }
@@ -99,6 +100,4 @@ Navigate()
       alert("invalid credentials");
 }
 }
-
-
 }

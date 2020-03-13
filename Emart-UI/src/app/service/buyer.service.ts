@@ -66,4 +66,9 @@ export class BuyerService {
    {
 return this.http.post<any>(this.url+'BuyItem',PurchaseHistory,Requestheaders);
    }
+
+ public ViewOrders(id:any):Observable<any>
+ {
+   return this.http.get<any>(this.url+'purchasehistory/'+id,Requestheaders);
+ }
 }
