@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emart.AccountService", "Emart.AccountService\Emart.AccountService.csproj", "{ECFE7412-6F8A-4FDD-BDDD-8D2C17D9D5D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emart.BuyerServices", "Emart.BuyerServices\Emart.BuyerServices.csproj", "{4DFE3E10-DAC4-4BAA-AAB8-22AD6F22D812}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emart.AdminService", "Emart.AdminService\Emart.AdminService.csproj", "{9181313C-4FA5-4FAE-8BA0-C2924891AF7A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emart.gatewayService", "Emart.gatewayService\Emart.gatewayService.csproj", "{7024E20A-D0D0-4176-A124-A068FE39CD04}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emart.SellerService", "Emart.SellerService\Emart.SellerService.csproj", "{13603BCE-F48E-40C0-928F-D731F8633BD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emart.Test", "Emart.Test\Emart.Test.csproj", "{4440C934-AB48-40BC-BC9E-9C196F50792E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECFE7412-6F8A-4FDD-BDDD-8D2C17D9D5D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECFE7412-6F8A-4FDD-BDDD-8D2C17D9D5D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECFE7412-6F8A-4FDD-BDDD-8D2C17D9D5D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECFE7412-6F8A-4FDD-BDDD-8D2C17D9D5D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DFE3E10-DAC4-4BAA-AAB8-22AD6F22D812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DFE3E10-DAC4-4BAA-AAB8-22AD6F22D812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DFE3E10-DAC4-4BAA-AAB8-22AD6F22D812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DFE3E10-DAC4-4BAA-AAB8-22AD6F22D812}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9181313C-4FA5-4FAE-8BA0-C2924891AF7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9181313C-4FA5-4FAE-8BA0-C2924891AF7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9181313C-4FA5-4FAE-8BA0-C2924891AF7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9181313C-4FA5-4FAE-8BA0-C2924891AF7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7024E20A-D0D0-4176-A124-A068FE39CD04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7024E20A-D0D0-4176-A124-A068FE39CD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7024E20A-D0D0-4176-A124-A068FE39CD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7024E20A-D0D0-4176-A124-A068FE39CD04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13603BCE-F48E-40C0-928F-D731F8633BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13603BCE-F48E-40C0-928F-D731F8633BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13603BCE-F48E-40C0-928F-D731F8633BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13603BCE-F48E-40C0-928F-D731F8633BD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4440C934-AB48-40BC-BC9E-9C196F50792E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4440C934-AB48-40BC-BC9E-9C196F50792E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4440C934-AB48-40BC-BC9E-9C196F50792E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4440C934-AB48-40BC-BC9E-9C196F50792E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31FBDE9E-89A4-4FD1-AC45-140731B72C30}
+	EndGlobalSection
+EndGlobal

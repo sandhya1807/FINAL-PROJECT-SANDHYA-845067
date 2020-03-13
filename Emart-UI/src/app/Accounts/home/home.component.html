@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active"  href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a class  [routerLink]="'/home/login'" routerLinkActive="router-link-active"   asp-area="" asp-controller="Home">Login</a>
+        <a class  [routerLink]="'/home/registerbuyer'" class="btn btn-link"><i class="fa fa-fw fa-user"></i>registerbuyer</a>
+        <a [routerLink] ="'/home/registerseller'" class="btn btn-link"><i class="fa fa-fw fa-user"></i>registerseller</a>
+        <a href="#" id="l" ><i class="fa fa-fw fa-user"></i>logout</a>
+      </div>
+</body>
+</html>
+<router-outlet></router-outlet>

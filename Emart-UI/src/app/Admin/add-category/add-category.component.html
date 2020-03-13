@@ -1,0 +1,34 @@
+<div class="container">
+   <div class="card m-3"style="background-image: repeating-linear-gradient(pink,white,grey); width: 50rem;">
+    <h5 class="card-header text-center">Add Category</h5>
+      <div class="card-body">
+        <form class="form-3" [formGroup]="addcategoryform" (ngSubmit)="onSubmit()">
+            <div class="form-group col-md-5 offset-3">
+            <label>Categoryname</label>
+                <select formControlName="categoryname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.categoryname.errors }">
+                <option value=""></option>
+                <option value="cloths">Cloths</option>
+                <option value="watches">Watches</option>
+                <option value="electronics">Electronics</option>
+                <option value="grocery">grocery</option>
+                </select>
+            <div *ngIf="submitted && f.categoryname.errors" class="invalid-feedback">
+            <div *ngIf="f.categoryname.errors.required">Name is required</div>
+            </div>
+        </div>
+         <div class="form-group col-md-5 offset-3">
+            <label>briefdetails</label>
+            <textarea type="text" formControlName="briefdetails" class="form-control" [ngClass]="{'is-invalid':submitted && f.briefdetails.errors}"></textarea>
+            <div *ngIf="submitted && f.briefdetails.errors" class="invalid-feedback">
+            <div *ngIf="f.briefdetails.errors.required">Name is required</div>
+            </div>
+         </div>
+        <div class="form-group col-md-6 offset-3">
+            <button class="btn btn-primary mr-1" type="submit" >Submit</button>
+            <button class="btn btn-danger mr-1" (click)="Delete()" type="button">Delete</button>
+            <button class="btn btn-secondary mr-1" type="reset" (click)="onReset()">Reset</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

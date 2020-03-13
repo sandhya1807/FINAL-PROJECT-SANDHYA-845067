@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="card m-3"style="background-image: repeating-linear-gradient(pink,white,grey); width: 50rem;">
+    <h5 class="card-header text-center">seller view and edit profile</h5>
+    <div class="card-body">
+            <form [formGroup]="editform" (ngSubmit)="onSubmit()">
+                <div class="form-group col-5 offset-4">
+                    <label>User Name</label>
+                    <input type="text" formControlName="susername" class="form-control" />
+                                    </div>
+                <div class="form-group col-5 offset-4">
+                    <label>Company Name</label>
+                    <input type="text" formControlName="companyname" class="form-control"  />
+                                         </div>
+                <div class="form-group col-5 offset-4">
+                    <label>Brief about company</label>
+                    <textarea type="text" formControlName="brief" class="form-control" ></textarea>
+                    
+                                        </div>
+                <div class="form-group col-5 offset-4">
+                    <label>GSTIN</label>
+                    <input type="text" formControlName="gstin" class="form-control"  />
+                                   </div>
+                
+
+                <div class="form-group col-5 offset-4">
+                    <label>Address</label>
+                    <textarea type="text" formControlName="address" class="form-control"></textarea>
+                                    </div>
+               
+            <div class="form-group col-5 offset-4">
+                <label>Mobile</label>
+               
+                <input type="text" formControlName="mobile" class="form-control" />
+                                 </div>
+            <div class="form-group col-5 offset-4">
+                <label >Email</label>
+                <input type="text" formControlName="emailid" class="form-control" />
+                                </div>
+               <div class="form-group col-md-5 offset-4">
+                <button class="btn btn-primary mr-1">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    

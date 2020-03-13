@@ -1,0 +1,94 @@
+   <div class="container"> 
+    <div class="card m-3" style="background-image: repeating-linear-gradient(pink,white,grey); width: 110rem;">
+      <h5 class="card-header text-center ">View Items</h5>
+      <div class="table table-bordered">
+          <tr>
+              <th>Item Id</th>
+              <th>Category Id</th>
+              <th>SubCatergory Id</th>
+              <th>Price</th> 
+              <th>ItemName</th>
+              <th>Description</th>
+              <th>Stockno</th>
+              <th>Remarks</th>
+              <th>SellerId</th>
+              <th>Image</th>
+              <th>Edit</th>
+              <th>Delete</th>
+          </tr>
+          <tr *ngFor="let item of list">
+             <td>{{item.iid}}</td>
+             <td>{{item.categoryid}}</td>
+             <td>{{item.subcategoryid}}</td>
+             <td>{{item.price}}</td> 
+             <td>{{item.itemname}}</td>
+             <td>{{item.description}}</td>
+             <td>{{item.stocknumber}}</td>
+             <td>{{item.remarks}}</td>
+             <td>{{item.sid}}</td>
+             <td> <img src='assets/images/{{item.image}}' style="height:150px; width:150px;"></td>
+             <td><button class="btn btn-primary  mr-1" data-toggle="modal" data-target="#myModal" (click)="Search(item.iid)">Edit</button></td>
+             <td><button class="btn btn-danger mr-1" type="button"  (click)="Delete(item.iid)">Delete</button></td>
+          </tr>
+      </div>   
+          <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title">Items Update</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form [formGroup]="itemForm">
+                      <div class="form-group col-md-5 offset-4">
+                        <label>ItemId:</label>
+                        <input type="text" formControlName="iid" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.iid.errors }">
+                          <div *ngIf="submitted && f.iid.errors" class="invalid-feedback">
+                          <div *ngIf="f.iid.errors.required">itemid is required</div>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-5 offset-4">
+                        <label>ItemName:</label>
+                        <input type="text" formControlName="itemname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.itemname.errors }">
+                        <div *ngIf="submitted && f.itemname.errors" class="invalid-feedback">
+                          <div *ngIf="f.itemname.errors.required">category is required</div>
+                        </div>
+                      </div>
+                        <div class="form-group col-md-5 offset-4">
+                        <label>Price:</label>
+                        <input type="number" formControlName="price" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.price.errors }">
+                        <div *ngIf="submitted && f.price.errors" class="invalid-feedback">
+                          <div *ngIf="f.price.errors.required">category is required</div>
+                        </div>
+                      </div>
+                        <div class="form-group col-md-5 offset-4">
+                        <label>Description:</label>
+                        <input type="text" formControlName="description" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.description.errors }">
+                        <div *ngIf="submitted && f.description.errors" class="invalid-feedback">
+                          <div *ngIf="f.description.errors.required">description is required</div>
+                        </div>
+                      </div>
+                        
+                        <div class="form-group col-md-5 offset-4">
+                          <label>Remarks:</label>
+                          <input type="text"formControlName="remarks" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.remarks.errors }">
+                          <div *ngIf="submitted && f.remarks.errors" class="invalid-feedback">
+                            <div *ngIf="f.remarks.errors.required">remarks is required</div>
+                          </div>
+                        </div>
+                       
+                       
+                        <div class="form-group col-md-5 offset-4">
+                            <button class="btn btn-primary mr-1" (click)="Update()">Update</button>
+                            <button class="btn btn-danger" type="reset" (click)="onReset()">Reset</button>
+                        </div>
+                        </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                      </div>
+                      </div>
+      </div>                  
+      </div>      
+     </div>
+

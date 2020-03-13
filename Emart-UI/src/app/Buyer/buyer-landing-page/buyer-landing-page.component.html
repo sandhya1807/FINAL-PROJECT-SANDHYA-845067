@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active"  href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a [routerLink]="['viewcart']" routerLinkActive="router-link-active" ><span class="glyphicon glyphicon-sunglasses"> </span>  ViewCart</a>
+        <a [routerLink]="['payment']" routerLinkActive="router-link-active" ><span class="glyphicon glyphicon-time"> </span>payment </a>
+        <a [routerLink]="['/buyer-landing-page/by-product']" routerLinkActive="router-link-active" ><span class="glyphicon glyphicon-shopping-cart"></span> BuyProduct</a>
+        <a [routerLink]="['buyer-edit-profile']" routerLinkActive="router-link-active" ><i class="fa fa-fw fa-user"></i>BuyerEditProfile</a>
+        <a [routerLink]="['search']" routerLinkActive="router-link-active"><span class="fa fa-search"></span>Search</a>
+        <a href="#" id="l" ><i class="fa fa-fw fa-user"></i>logout</a>
+      </div>
+</body>
+</html>
+<router-outlet></router-outlet>

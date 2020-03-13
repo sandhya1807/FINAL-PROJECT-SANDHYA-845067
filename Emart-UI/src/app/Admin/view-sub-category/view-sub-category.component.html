@@ -1,0 +1,21 @@
+<div class="container"> 
+    <div class="card m-3" style="background-image: repeating-linear-gradient(pink,white,grey); width: 60rem;">
+      <h5 class="card-header text-center " >View Category</h5>
+      <div class="table table-bordered">
+        <tr>
+        <th>category Id</th>
+        <th>Subcategory Id</th>
+        <th>SubCategoryName</th>
+        <th>GST percentage</th>    
+    </tr>
+    <tr *ngFor="let cat of subcategory">  
+       <td>{{cat.categoryid}}</td>
+       <td>{{cat.subcategoryid}}</td>
+       <td>{{cat.subcategoryname}}</td>
+       <td>{{cat.gst}}</td>
+       <td><button type="button" class="btn btn-info btn-lg"  (click)="DeleteSubCategory(cat.subcategoryid)">Delete</button></td>
+    </tr>
+   </div>
+  </div>
+</div>
+  

@@ -1,0 +1,72 @@
+<div class="container offset-3">
+  <div class="row">
+     <div class="col-sm-9 col-md-7 col-lg-4 mx-auto">
+        <div class="card card-signin my-5 bg-dark" style="float:right">
+           <h5 class="card-header text-center" style="color: whitesmoke;">Payment Gateway</h5>
+              <div class="card-body">
+              <form [formGroup]="RegisterForm" (ngSubmit)="onSubmit()">    
+                  <div class="form-group">
+                    <label style="color: whitesmoke;">Number Of Items</label>
+                    <input type="text" formControlName="noofitems" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.noofitems.errors }" autofocus/>
+                    <div *ngIf="submitted && f.noofitems.errors" class="invalid-feedback">
+                    <div *ngIf="f.noofitems.errors.required">Please Provide Number Of Items you want</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label style="color: whitesmoke;">Choose PayMent Mode</label>
+                      <select formControlName="transactiontype" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.transactiontype.errors }" required>
+                      <option value="credit">Credit Card</option>
+                      <option value="debit">Debit Card</option>
+                      <option value="cod">Cash On Delivery</option>
+                      </select>
+                      <div *ngIf="submitted && f.transactiontype.errors" class="invalid-feedback">
+                      <div *ngIf="f.transactiontype.errors.required">Please Choose Payment Mode</div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label style="color: whitesmoke;">Card Number</label>
+                      <input type="text" formControlName="cardnumber" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.cardnumber.errors }"/>
+                      <div *ngIf="submitted && f.cardnumber.errors" class="invalid-feedback">
+                      <div *ngIf="f.cardnumber.errors.required">SubCategoryName is required</div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label style="color: whitesmoke;">CVV</label>
+                      <input type="number" formControlName="cvv" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.cvv.errors }" style="width: 30%;"/>
+                      <div *ngIf="submitted && f.cvv.errors" class="invalid-feedback">
+                      <div *ngIf="f.cvv.errors.required">SubCategoryName is required</div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label style="color: whitesmoke;">ExpiryDate</label>
+                          <input type="date" formControlName="ed" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.ed.errors }"/>
+                          <div *ngIf="submitted && f.ed.errors" class="invalid-feedback">
+                          <div *ngIf="f.ed.errors.required">SubCategoryName is required</div>
+                          </div>
+                   </div>
+                    <div class="form-group">
+                       <label style="color: whitesmoke;">Card Holders Name</label>
+                        <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }"/>
+                        <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                        <div *ngIf="f.name.errors.required">SubCategoryName is required</div>
+                        </div>
+                    </div>
+                            <div class="form-group">
+                                    <label style="color: whitesmoke;">Remarks</label>
+                                    <textarea type="text" formControlName="remarks" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.remarks.errors }"></textarea>
+                                    <div *ngIf="submitted && f.remarks.errors" class="invalid-feedback">
+                                      <div *ngIf="f.remarks.errors.required">SubCategoryName is required</div>
+                                  </div>
+                            </div>
+                                <hr class="my-4 bg-success"/>
+                                <div class="form-group">
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary mr-1">Purchase</button>
+                                    </div>
+                                </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

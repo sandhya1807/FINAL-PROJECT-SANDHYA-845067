@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="card m-3" style="background-image: repeating-linear-gradient(pink,white,grey); width: 50rem;">
+  <h5 class="card-header text-center">Add SubCategory</h5>
+    <div class="card-body">
+            <form class="form-3" [formGroup]="addSubcategoryform" (ngSubmit)="onSubmit()">
+        <div class="form-group col-md-5 offset-4">
+        <label>subcategoryname</label>
+        <select formControlName="subcategoryname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.subcategoryname.errors }" >
+            <option value=""></option>
+            <option value="saress">Sarees</option>
+            <option value="dresses">Dresses</option>
+            <option value="kids wear">Kids wear</option>
+            </select>
+            <div *ngIf="submitted && f.subcategoryname.errors" class="invalid-feedback">
+            <div *ngIf="f.subcategoryname.errors.required">Name is required</div>
+             </div>
+        </div>
+        <div class="form-group col-md-5 offset-4">
+                    <label>CategoryID</label>
+                    <input type="text" formControlName="categoryid" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.categoryid.errors }">
+                       <div *ngIf="submitted && f.categoryid.errors" class="invalid-feedback">
+                        <div *ngIf="f.categoryid.errors.required">ID is required</div>
+                    </div>
+        </div>
+        <div class="form-group col-md-5 offset-4">
+                <label>GST</label>
+                <input type="number" formControlName="gst" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.gst.errors }">
+                   <div *ngIf="submitted && f.gst.errors" class="invalid-feedback">
+                    <div *ngIf="f.gst.errors.required">ID is required</div>
+                </div>
+        </div>
+        <div class="form-group col-md-6  offset-4">
+                <button class="btn btn-primary mr-1" type="submit">Submit</button>
+                <button class="btn btn-danger mr-1" (click)="Delete()" type="button">Delete</button>
+                <button class="btn btn-secondary mr-1" type="reset" (click)="onReset()">Reset</button>
+        </div>
+      </form>
+    </div>  
+  </div>
+</div>
