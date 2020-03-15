@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emart.gatewayService", "Ema
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emart.SellerService", "Emart.SellerService\Emart.SellerService.csproj", "{13603BCE-F48E-40C0-928F-D731F8633BD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emart.Test", "Emart.Test\Emart.Test.csproj", "{4440C934-AB48-40BC-BC9E-9C196F50792E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emart.Test", "Emart.Test\Emart.Test.csproj", "{4440C934-AB48-40BC-BC9E-9C196F50792E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -26,8 +26,7 @@ export class AddItemsComponent implements OnInit {
      }
     ngOnInit() {
     this.additemsForm = this.formBuilder.group({
-      
-      categoryid: ['', Validators.required],
+            categoryid: ['', Validators.required],
       subcategoryid: ['', [Validators.required]],
       itemname:['',[Validators.required]],
       price:['',[Validators.required]],

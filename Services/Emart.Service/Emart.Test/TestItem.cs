@@ -50,10 +50,10 @@ namespace Emart.Test
         [Description("Test UpdateItem()")]
         public void TestUpdateItem()
         {
-            Items item = _repo.GetItem("12");
-            item.Stocknumber = "567";
+            Items item = _repo.GetItem("I12");
+            item.Stocknumber = "5670";
             _repo.UpdateItem(item);
-            Items item1 = _repo.GetItem("12");
+            Items item1 = _repo.GetItem("I12");
             Assert.AreEqual(item, item1);
         }
         

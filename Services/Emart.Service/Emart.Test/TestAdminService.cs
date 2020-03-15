@@ -58,14 +58,14 @@ namespace Emart.Test
         [Description("Test GetCategoryById")]
         public void TestGetCategoryById()
         {
-            var result = _repo.GetCategoryById(3);
+            var result = _repo.GetCategoryById(4);
             Assert.IsNotNull(result);
         }
         [Test]
         [Description("Test GetSubCategoryById")]
         public void TestGetSubCategoryById()
         {
-            var result = _repo.GetSubCategoryById(2);
+            var result = _repo.GetSubCategoryById(3);
             Assert.IsNotNull(result);
         }
     }

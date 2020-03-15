@@ -105,6 +105,8 @@ namespace EMart.Buyerservices.Controllers
            }
 
         }
+        
+        
         [HttpGet]
         [Route("GetCategory")]
         public IActionResult GetCategories()

@@ -28,18 +28,13 @@
         <div *ngIf="f.sid.errors.required">sellerid is required</div>
       </div>
     </div>
-
-
-
-
-     <div class="form-group col-md-5 offset-4">
+    <div class="form-group col-md-5 offset-4">
       <label>ItemName:</label>
       <input type="text" formControlName="itemname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.itemname.errors }">
       <div *ngIf="submitted && f.itemname.errors" class="invalid-feedback">
         <div *ngIf="f.itemname.errors.required">itemname is required</div>
       </div>
     </div>
-
     <div class="form-group col-md-5 offset-4">
       <label>Price:</label>
       <input type="number" formControlName="price" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.price.errors }">
@@ -47,7 +42,6 @@
         <div *ngIf="f.price.errors.required">price is required</div>
       </div>
     </div>
-
     <div class="form-group col-md-5 offset-4">
       <label>Description:</label>
       <input type="text" formControlName="description" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.description.errors }">
@@ -55,7 +49,6 @@
         <div *ngIf="f.description.errors.required">description is required</div>
       </div>
     </div>
-
       <div class="form-group col-md-5 offset-4">
         <label>Stock:</label>
         <input type="text"formControlName="stocknumber" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.stocknumber.errors }">
@@ -70,7 +63,6 @@
           <div *ngIf="f.remarks.errors.required">remarks is required</div>
         </div>
       </div>
-
          <div class="form-group col-md-5 offset-4">
           <label for="exampleFormControlFile1">upload Photo</label>
           <input type="file" formControlName="image" (change)="fileEvent($event)" class="form-control-file"[ngClass]="{'is-invalid':submitted &&f.image.errors}">
@@ -78,18 +70,12 @@
             <div *ngIf="f.image.errors.required">image is required</div>
           </div>
           </div>
-          
-          <div class="form-group col-md-5 offset-4">
+        <div class="form-group col-md-5 offset-4">
           <button class="btn btn-primary mr-1">Add</button>
           <button class="btn btn-danger" type="reset" (click)="onReset()">Reset</button>
       </div>
-       </form>
+    </form>
 </div>
 </div>
 </div>
-
-   
-                
-
-
-
+ 
